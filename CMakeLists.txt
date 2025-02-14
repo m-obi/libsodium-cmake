@@ -6,7 +6,7 @@ endif()
 
 project("sodium" LANGUAGES C)
 
-option(SODIUM_DISABLE_TESTS "Disable tests" ON)
+option(SODIUM_DISABLE_TESTS "Disable tests" OFF)
 option(SODIUM_MINIMAL "Only compile the minimum set of functions required for the high-level API" OFF)
 option(SODIUM_ENABLE_BLOCKING_RANDOM "Enable this switch only if /dev/urandom is totally broken on the target platform" OFF)
 
