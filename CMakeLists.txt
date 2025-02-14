@@ -12,8 +12,12 @@ option(SODIUM_ENABLE_BLOCKING_RANDOM "Enable this switch only if /dev/urandom is
 
 add_library(${PROJECT_NAME}
     libsodium/src/libsodium/crypto_aead/aegis128l/aead_aegis128l.c
+    libsodium/src/libsodium/crypto_aead/aegis128l/aegis128l_aesni.c
+    libsodium/src/libsodium/crypto_aead/aegis128l/aegis128l_armcrypto.c
     libsodium/src/libsodium/crypto_aead/aegis128l/aegis128l_soft.c
     libsodium/src/libsodium/crypto_aead/aegis256/aead_aegis256.c
+    libsodium/src/libsodium/crypto_aead/aegis256/aegis256_aesni.c
+    libsodium/src/libsodium/crypto_aead/aegis256/aegis256_armcrypto.c
     libsodium/src/libsodium/crypto_aead/aegis256/aegis256_soft.c
     libsodium/src/libsodium/crypto_aead/aes256gcm/aesni/aead_aes256gcm_aesni.c
     libsodium/src/libsodium/crypto_aead/aes256gcm/aead_aes256gcm.c
